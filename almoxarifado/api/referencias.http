@@ -1,0 +1,57 @@
+###
+
+GET http://localhost:3000/ferramentas
+
+###
+
+GET http://localhost:3000/ferramentas/1
+
+###
+
+GET http://localhost:3000/ferramentas/999
+
+###
+
+POST http://localhost:3000/ferramentas
+Content-Type: application/json
+
+{
+  "nome": "Chave de fenda",
+  "quantidade": 10
+}
+
+###
+
+POST http://localhost:3000/ferramentas
+Content-Type: application/json
+
+{
+  "quantidade": 5
+}
+
+### 
+
+POST http://localhost:3000/ferramentas
+Content-Type: application/json
+
+{
+  "nome": "Alicate",
+  "quantidade": "dez"
+}
+
+###
+
+PUT  http://localhost:3000/ferramentas/3
+Content-Type: application/json
+
+{
+  "quantidade": 99
+}
+
+###
+
+DELETE http://localhost:3000/ferramentas/3
+
+###
+
+GET http://localhost:3000/ferramentas?status=em_uso
